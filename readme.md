@@ -6,7 +6,7 @@ packets like ping request can compromise your identity.
 
 ## How to install ?
 
-**New kali update is causing permission error, please build and install from source**
+kali update is causing permission error, please build and install from source**
 
 TorGhost can be installed by downloading the [latest release](https://github.com/SusmithKrishnan/torghost/releases)
 using debian package manager
