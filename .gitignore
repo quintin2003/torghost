@@ -379,3 +379,5 @@ cython_debug/
 
 
 !/.github/workflows/qodana_code_quality.yml
+!/.github/
+!/.github/workflows/qodana.yaml
