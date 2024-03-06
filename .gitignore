@@ -181,6 +181,11 @@ _deps
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff
+/.github/workflows/qodana_code_quality.yml
+/.github/
+/.github/workflows/qodana.yaml
+
+.idea/
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
@@ -378,6 +383,4 @@ cython_debug/
 /dataSources.local.xml
 
 
-!/.github/workflows/qodana_code_quality.yml
 !/.github/
-!/.github/workflows/qodana.yaml
