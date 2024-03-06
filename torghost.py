@@ -1,11 +1,12 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-import os
-import sys
 import getopt
-import subprocess
-import time
 import json
+import os
+import subprocess
+import sys
+import time
+
 from stem import Signal
 from stem.control import Controller
 
