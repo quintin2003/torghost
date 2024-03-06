@@ -12,7 +12,7 @@ else
     echo [ERROR] Build failed. Unable to generate C code using cython3
     exit 1
 fi
-gcc -Os -I /usr/include/python3 -o torghost torghost.c -lpython3.* -lpthread -lm -lutil -ldl
+gcc -Os -I /usr/include/python3.* -o torghost torghost.c -lpython3.* -lpthread -lm -lutil -ldl
 if [ $? -eq 0 ]; then
     echo [SUCCESS] Compiled to static binay 
 else
