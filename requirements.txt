@@ -3,6 +3,3 @@ requests>=2.22.0
 requests[socks]
 requests[security]
 cython
-poetry
-poetry-core
-
