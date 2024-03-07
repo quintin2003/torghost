@@ -1,15 +1,13 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 import getopt
-import json
 import os
 import subprocess
 import sys
 import time
-
+import requests
 from stem import Signal
 from stem.control import Controller
-
 
 def github_link():
     """
@@ -21,13 +19,15 @@ for referencing but not initially needed
 
 def get_ip_from_api():
     """
-bingbong, gotta get your ip
+    bingbong, gotta get your ip
     """
     link = "https://api.ipify.org/?format=json"
-    cmd = 'curl '
-    result = subprocess.run(cmd + link, capture_output=True, text=True, stdout=True)
-    ip = json.loads(result.stdout)
-    print(ip)
+    try:
+        response = requests.get(link)  # Use requests to get the data from the URL
+        ip_data = response.json()  # Convert the response data to JSON
+        print(ip_data)  # Print the result
+    except requests.RequestException as e:  # This catches any error during the HTTP request
+        print("Error fetching IP: {}".format(e))
 
 
 def t():
