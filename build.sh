@@ -1,6 +1,6 @@
 echo "Torghost installer v3.0"
 echo "Installing prerequisites "
-sudo apt install tor python3-pip iptables gcc-python3-plugin iptables-persistent python-pycurl python3-iptables gcc -y
+sudo apt install tor python3-pip iptables iptables-persistent python3-pycurl python3-iptables gcc -y
 echo "Installing dependencies "
 sudo pip install -r requirements.txt --break-system-packages
 mkdir build
